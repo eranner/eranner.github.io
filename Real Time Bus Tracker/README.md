@@ -1,4 +1,4 @@
-#Real Time Bus Tracker#
+<h1>Real Time Bus Tracker</h1>
 
 This is a simple application that took the same sort of formula the MIT bus schedule exercise used. Instead, I set it to my home town of Honesdale, Pennsylvania. Instead of a bus schedule, which this small town certainly DOES NOT have, I changed it to display the coordinates of the best restaurants to visit in the town of Honesdale.
 
