@@ -1,4 +1,4 @@
-`#`Eye Exercise
+<h1>Eye Exercise</h1>
 
 This exercise combines all three of the languages we have learned, HTML, CSS, and JavaScript. CSS obviousy is there for the colors, but is also used to create the shapes
 whether that be the eyes or the pupils. The basic function of this page is to have the pupils of the eyes follow the location of the mouse location.
