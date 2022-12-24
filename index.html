@@ -5,13 +5,360 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Ranner's GitHub Porfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Eric's Updated Portfolio</h1>
-    <img style='height: 300px;' src="./eric_and_julia.jpg" alt="">
+    <div class="backgroundImage"></div> 
+
+    <video autoplay muted loop id="myVideo">
+        <source src="./images/circuit.mp4" type="video/mp4">
+      </video>
+    <nav class="navbar navbar-expand-lg" style="background-color: rgba(9, 9, 9, 0.649); color: white;">
+
+        <div class="container-fluid" >
+          <a class="navbar-brand" style="color: white;" href="#">Eric J. Ranner</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: rgba(255, 255, 255, 0.327);">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <!-- Button trigger videoIntro Modal -->
+                          <li class="nav-item"><button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#meetEric" style="background-color:transparent; border: none;padding: 8px 15px 0 0px;">
+                            <span class="blueHover">Meet Eric</span> 
+                           </button></li>
+
+              <li class="nav-item">
+                                          <!-- Button trigger bio Modal -->
+                                          <li class="nav-item"><button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#bio" style="background-color:transparent; border: none;padding: 8px 15px 0 0;">
+                                            <span class="blueHover">Bio</span> 
+                                           </button>
+                <!-- <a class="nav-link active" aria-current="page" href="#"style="color: white;"><span class="blueHover">Bio</span></a> -->
+              </li>
+              <li class="nav-item">
+               <!-- Button trigger projects Modal -->
+              <li class="nav-item"><button type="button" class="btn btn-primary" data-bs-toggle="modal"  data-bs-target="#projects" style="background-color:transparent; border: none;padding: 8px 15px 0 0;">
+                <span class="blueHover">Projects</span> 
+                 </button>
+                <!-- <a class="nav-link" href="#"style="color: white;"><span class="blueHover">Projects</span></a> -->
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"style="color: white;">
+                <span class="blueHover">Quick Links</span> 
+                </a>
+                <ul class="dropdown-menu" style="color: white;background-color: rgba(9, 9, 9, 0.649);">
+                  <li><a class="dropdown-item" style='color: white;'href='./PacMen Exercise/index.html'><span class="blueHover">PacMen Exercise</span></a></li>
+                  <li><a class="dropdown-item" style='color: white;'href='./eye-movement/index.html'><span class="blueHover">Eye Exercise</span></a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" style='color: white;' href='./maps/index.html'><span class="blueHover">Real Time Bus Tracking</span></a></li>
+                  <li><a class="dropdown-item" style='color: white;' href='https://eranner.website/brickBreaker/'><span class="blueHover">Brick Breaker</span></a></li>
+                  <li><a class="dropdown-item" style='color: white;' href='https://eranner.website/st_dom2/'><span class="blueHover">Saint Dominics School</span></a></li>
+                  <li><a class="dropdown-item" style='color: white;' href='https://eranner.website/checkbox.php'><span class="blueHover">High Score</span></a></li>
+                  <li><a class="dropdown-item" style='color: white;' href='https://eranner.website/home.php'><span class="blueHover">High Score(PHP Version)</span></a></li>
+                  <li><a class="dropdown-item" style='color: white;' href='https://eranner.website/Scrabble/scrabbleboard15x15.html'><span class="blueHover">Scrabble</span></a></li>
+                  <li><a class="dropdown-item" style='color: white;' href='https://eranner.website/Horse%20Racing/Horse%20Racing%201.3.html'><span class="blueHover">Kentucky Derby</span></a></li>
+                  <li><a class="dropdown-item" style='color: white;' href='https://eranner.website/houseparty.php'><span class="blueHover">Checklist</span></a></li>
+                  <li><a class="dropdown-item" style='color: white;' href='http://eranner.website/GoogleGame8/googleGame7MainPage.html'><span class="blueHover">Google Game</span></a></li>
+                </ul>
+              </li>
+
+
+          </div>
+        </div>
+      </nav>
+
+  
+  <!-- Meet Eric Modal -->
+  <div class="modal fade" id="meetEric" tabindex="-1" aria-labelledby="meetEricModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" style="color: white;">
+      <div class="modal-content" style="background-color: rgba(9, 9, 9, 0.649); color: white;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="justify-content: center;">Meet Eric</h1>
+          
+        </div>
+        <div class="modal-body">
+          Welcome to my GitHub Portfolio! Thank you for stopping by. If you'd like to learn more about me or my projects, please watch the video below!
+          <br>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/idRg5v8VFm8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style='width:100%;'></iframe>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: rgb(0, 122, 252);">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Bio Modal -->
+    <div class="modal fade" id="bio" tabindex="-1" aria-labelledby="bio" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" style="color: white;">
+          <div class="modal-content" style="background-color: rgba(9, 9, 9, 0.649); color: white;">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel" style="justify-content: center;">Bio</h1>
+              
+            </div>
+            <div class="modal-body">
+                <div class="flexContain"> 
+                    <h2>Eric J. Ranner</h2>
+                    <h4 id="social">Web Developer</h4>
+                    <h5>Honesdale, PA</h5>
+                    <img src="./images/ej_and_i.jpg" id="profile-pic" alt="">
+                    <h5 id="phoneStuff"><a id="phone" href="tel:5703949929">570-394-9929</a> || <a id="email" href="mailto:eranner@gmail.com">eranner@gmail.com</a> || <a href="https://www.linkedin.com/in/eric-ranner-79a6aa41/">LinkedIn</a></h5></div>
+               
+
+                <p style='margin-top: 30px; padding: 0 20px 0 20px;'>Eric was born and raised in Honesdale, Pennsylvania. He is one of six children! Being one of the middle children, for attention, Eric has always found a way to entertain people.</p>
+                <p style='padding: 0 20px 0 20px;'>After graduating from Honesdale High School, he began his quest for more knowledge at East Stroudsburg University, where he majored in Hotel, Restaurant and Tourism Management. Since he grew up working in the industry, this seemed like a natural fit for him.
+                    Puting these skills to good use, while in and out of college, Eric worked at a world class resort known as Woodloch Pines. Unbeknownst to him, this is where his coding journey would begin.
+                </p>
+                <p style='padding: 0 20px 0 20px;'>After changing majors and schools, Eric seemed to find his stride at Woodloch. Entertaining guests seemed to be a fantastic use of his talents. Along the way, he actually married one of the guests there!
+                    As the old adage goes, first comes love, then comes marriage, and of course then comes the baby carriage. Eric and his beautiful wife Julia have
+                    three amazing children that bring so much joy to their sometimes very hectic lives.
+                </p>
+        <p style='padding: 0 20px 0 20px;'>So one may wonder, how did Eric become a programmer? Well, I'm glad you asked! One major aspect to Eric's job as the Corporate Social Director at Woodloch is to
+            make many of Woodloch's entertaining games. It started with Microsoft Powerpoint, but as time went on, his skills and desires outgrew the confines of the program.
+            Eventually leading him to teach himself how to use HTML, CSS, and Javascript.
+        </p>
+        <p style='padding: 0 20px 0 20px;'>After a year of doing this, Eric realized that he found such a sense of fulfillment in programming that his regular job just couldn't cut it anymore.
+            He is now looking for full time employment doing web development and making world class applications.</p><p style='padding: 0 20px 0 20px;'> Eric welcomes you to try some of the fun projects that he has completed/is currently working on. Please click on the links provided and have some fun!
+        </p>
+            </div>
     
-    <a href='./PacMen Exercise/index.html'>PacMan</a>
-    <a href='./eye-movement/index.html'>Moving Eyes</a>
-    <a href='./maps/index.html'>Map</a>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: rgb(0, 122, 252);">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Projects Modal -->
+  <div class="modal fade" id="projects" tabindex="-1" aria-labelledby="projects" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" style="color: white;">
+      <div class="modal-content" style="background-color: rgba(9, 9, 9, 0.649); color: white;">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="justify-content: center;">Current Projects</h1>
+          
+        </div>
+        <div class="modal-body"style="background-color: rgba(9, 9, 9, 0.649);">
+            <div class="flexcard">
+                <!-- pacman exercise -->
+                <div class="card" style="width: 18rem; background-color:rgba(255, 255, 255, 0.107);">
+                    <img src="./pacman/PacMan1.png" style="height:300px;" class="card-img-top" alt="image of pacman">
+                    <div class="card-body"style="color: white;">
+                      <h5 class="card-title">PacMen Exercise</h5>
+                      <p class="card-text">
+                        <p>Front End Developer</p>
+                        <p>Tech Stack</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+        <li class="blueHover"><a href="https://github.com/eranner/eranner.github.io/tree/main/PacMen%20Exercise"style="color: white; text-decoration: none;" ><span class="blueHover">Source Code</span></a></li>
+
+                    </ul>
+                      </p>
+                      <a href="./PacMen Exercise/index.html" class="btn btn-primary">Click to Try</a>
+                    </div>
+                  </div>
+                  <!-- eyeball exercise -->
+                  <div class="card" style="width: 18rem; background-color:rgba(255, 255, 255, 0.107);">
+                    <img src="./images/eyeball.png" style='height:300px;'class="card-img-top" alt="image of eyeball">
+                    <div class="card-body"style="color: white;">
+                      <h5 class="card-title">Eye Exercise</h5>
+                      <p class="card-text">
+                        <p>Front End Developer</p>
+                        <p>Tech Stack</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+        <li class="blueHover"><a href="https://github.com/eranner/eranner.github.io/tree/main/Eye%20Exercise"style="color: white; text-decoration: none;" ><span class="blueHover">Source Code</span></a></li>
+
+                    </ul>
+                      </p>
+                      <a href="./Eye Exercise/index.html" class="btn btn-primary">Click to Try</a>
+                    </div>
+                  </div>
+<!-- map exercise -->
+                    <div class="card" style="width: 18rem; background-color:rgba(255, 255, 255, 0.107);">
+                    <img src="./images/map.png" style='height:300px;'class="card-img-top" alt="image of eyeball">
+                    <div class="card-body"style="color: white;">
+                    <h5 class="card-title">Map (Real Time Bus Tracker)</h5>
+                    <p class="card-text">
+                    <p>Front End Developer</p>
+                    <p>Tech Stack</p>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+        <li class="blueHover"><a href="https://github.com/eranner/eranner.github.io/tree/main/Real%20Time%20Bus%20Tracker"style="color: white; text-decoration: none;" ><span class="blueHover">Source Code</span></a></li>
+
+                     </ul>
+                     </p>
+                    <a href="./Real Time Bus Tracker/index.html" class="btn btn-primary">Click to Try</a>
+                    </div>
+                     </div>
+<!-- brick brekaker -->
+<div class="card" style="width: 18rem; background-color:rgba(255, 255, 255, 0.107);">
+    <img src="./images/brick.png" style='height:300px;'class="card-img-top" alt="image of eyeball">
+    <div class="card-body"style="color: white;">
+    <h5 class="card-title">Brick Breaker (Shows CSS Grid)</h5>
+    <p class="card-text">
+    <p>Front End Developer</p>
+    <p>Tech Stack</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li class="blueHover"><a href="https://github.com/eranner/eranner.github.io/tree/main/brickBreaker"style="color: white; text-decoration: none;" ><span class="blueHover">Source Code</span></a></li>
+     </ul>
+     </p>
+    <a href="https://eranner.website/brickBreaker/" class="btn btn-primary">Click to Try</a>
+    </div>
+     </div>
+
+
+     <!-- st doms -->
+<div class="card" style="width: 18rem; background-color:rgba(255, 255, 255, 0.107);">
+    <div class="flexContain">
+    <img src="./images/pics/blueWhite.jpg" style='height:300px;'class="card-img-top" alt="image of eyeball">
+
+    </div>
+    <div class="card-body"style="color: white;">
+    <h5 class="card-title">Saint Dominics School (Under Construction)</h5>
+    <p class="card-text">
+    <p>Full Stack Developer</p>
+    <p>Tech Stack</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>Bootstrap</li>
+        <li>MySql</li>
+
+        <li class="blueHover"><a href="https://github.com/eranner/saint_doms"style="color: white; text-decoration: none;" ><span class="blueHover">Source Code</span></a></li>
+     </ul>
+     </p>
+    <a href="https://eranner.website/st_dom2" class="btn btn-primary">Click to Try</a>
+    </div>
+     </div>
+
+     <!-- High Score-->
+<div class="card" style="width: 18rem; background-color:rgba(255, 255, 255, 0.107);">
+    <img src="./images/pics/score.png" style='height:300px;'class="card-img-top" alt="image of eyeball">
+    <div class="card-body"style="color: white;">
+    <h5 class="card-title">High Score (Back of House)</h5>
+    <p class="card-text">
+    <p>Full Stack Developer</p>
+    <p>Tech Stack</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li class="blueHover"><a href="https://eranner.website/home.php"style="color: white; text-decoration: none;" ><span class="blueHover">PHP Version</span></a></li>
+        <li class="blueHover"><a href="https://github.com/eranner/highScore"style="color: white; text-decoration: none;" ><span class="blueHover">Source Code</span></a></li>
+     </ul>
+     </p>
+    <a href="https://eranner.website/checkbox.php" class="btn btn-primary">Click to Try</a>
+    </div>
+     </div>
+
+          <!-- Scrabble-->
+<div class="card" style="width: 18rem; background-color:rgba(255, 255, 255, 0.107);">
+    <img src="./images/pics/Scrabble.svg" style='height:300px;'class="card-img-top" alt="image of eyeball">
+    <div class="card-body"style="color: white;">
+    <h5 class="card-title">Scrabble</h5>
+    <p class="card-text">
+    <p>Front End Developer</p>
+    <p>Tech Stack</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+        <li>Photoshop</li>
+
+        <li class="blueHover"><a href="https://github.com/eranner/scrabble"style="color: white; text-decoration: none;" ><span class="blueHover">Source Code</span></a></li>
+     </ul>
+     </p>
+    <a href="https://eranner.website/Scrabble/scrabbleboard15x15.html" class="btn btn-primary">Click to Try</a>
+    </div>
+     </div>
+
+               <!-- Horse Racing-->
+<div class="card" style="width: 18rem; background-color:rgba(255, 255, 255, 0.107);">
+    <img src="./images/pics/Kentucky_Derby.svg" style='height:300px;'class="card-img-top" alt="image of eyeball">
+    <div class="card-body"style="color: white;">
+    <h5 class="card-title">Kentucky Derby</h5>
+    <p class="card-text">
+    <p>Front End Developer</p>
+    <p>Tech Stack</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li class="blueHover"><a href="https://github.com/eranner/kentucky-derby"style="color: white; text-decoration: none;" ><span class="blueHover">Source Code</span></a></li>
+     </ul>
+     </p>
+    <a href="https://eranner.website/Horse%20Racing/Horse%20Racing%201.3.html" class="btn btn-primary">Click to Try</a>
+    </div>
+     </div>
+
+                    <!-- Checklist-->
+<div class="card" style="width: 18rem; background-color:rgba(255, 255, 255, 0.107);">
+    <img src="./images/pics/checklist.png" style='height:300px;'class="card-img-top" alt="image of eyeball">
+    <div class="card-body"style="color: white;">
+    <h5 class="card-title">Checklist (Back of House)</h5>
+    <p class="card-text">
+    <p>Front End Developer</p>
+    <p>Tech Stack</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <!-- <li class="blueHover"><a href="#"style="color: white; text-decoration: none;" ><span class="blueHover">Source Code</span></a></li> -->
+     </ul>
+     </p>
+    <a href="https://eranner.website/houseparty.php" class="btn btn-primary">Click to Try</a>
+    </div>
+     </div>
+
+                         <!-- Google game-->
+<div class="card" style="width: 18rem; background-color:rgba(255, 255, 255, 0.107);">
+    <img src="./images/pics/google.png" style='height:300px;'class="card-img-top" alt="image of eyeball">
+    <div class="card-body"style="color: white;">
+    <h5 class="card-title">Google Game</h5>
+    <p class="card-text">
+    <p>Full Stack Developer</p>
+    <p>Tech Stack</p>
+    <ul>
+        <li>HTML5</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>PHP</li>
+        <li>Photoshop</li>
+        <li>Sony Vegas</li>
+
+        <!-- <li class="blueHover"><a href="#"style="color: white; text-decoration: none;" ><span class="blueHover">Source Code</span></a></li> -->
+     </ul>
+     </p>
+    <a href="http://eranner.website/GoogleGame8/googleGame7MainPage.html" class="btn btn-primary">Click to Try</a>
+    </div>
+     </div>
+            </div>
+        </div>
+
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: rgb(0, 122, 252);">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
