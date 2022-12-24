@@ -1,4 +1,4 @@
-#PacMen Exercise
+<h1>PacMen Exercise</h1>
 
 This is an exercise used to demonstrate setInterval and DOM Manipulation throught JavaScript. The primary lesson learned in this activity were using the width of the
 client to actually tell the pacmen to switch directions and using the native JavaScript Math methods to generate random data for the difference in how the pacmen move
